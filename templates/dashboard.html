@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome, {{ username }}!</h2>
+    <p>You are now logged in.</p>
+    
+    <h3>Leave a Comment:</h3>
+    <form method="POST" action="/comment">
+        <input type="text" name="comment" placeholder="Type your comment here"><br><br>
+        <input type="submit" value="Post Comment">
+    </form>
+
+    <h3>Comments:</h3>
+    {% for comment in comments %}
+        <p>{{ comment }}</p>
+    {% endfor %}
+
+    <a href="/logout">Logout</a>
+</body>
+</html>
