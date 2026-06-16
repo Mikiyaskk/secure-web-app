@@ -10,7 +10,7 @@ Both were documented and fixed.
 
 ## Vulnerabilities Demonstrated
 - **SQL Injection** — bypassed authentication using malicious input, fixed with parameterized queries
-- **XSS (Cross-Site Scripting)** — injected scripts via comments, fixed by removing unsafe rendering
+- **XSS (Cross Site Scripting)** — injected scripts via comments, fixed by removing unsafe rendering
 - **Plain Text Passwords** — fixed with bcrypt hashing
 
 ## Tech Stack
